@@ -9,10 +9,20 @@
  * ✅ Structured concurrency
  * ✅ Easy to cancel and manage
  *
+ * Coroutines are just like threads (lite-weight thread) but is not thread,
+ * Coroutines runs on the top of the threads.
+ *
+ * Coroutines :-
+ * 1. Coroutine Scope - defines lifetime
+ * 2. Coroutine Context - tells about the threads
+ *
  * */
 
+import kotlinx.coroutines.*
+import kotlin.coroutines.CoroutineContext
 
-fun main() {
+fun main(){
+
 
     /*
     🧠 launch starts a coroutine
@@ -43,7 +53,7 @@ fun main() {
  * */
 
 /***
- * Dispatchers
+ * Dispatchers :- dispatchers is a way to define threads on which Coroutines are executed.
  *
  * Dispatcher	                         Runs on
  * Dispatchers.Main	          -          Main thread (UI)
