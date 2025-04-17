@@ -54,7 +54,6 @@ fun main(){
 
 /***
  * Dispatchers :- dispatchers is a way to define threads on which Coroutines are executed.
- *
  * Dispatcher	                         Runs on
  * Dispatchers.Main	          -          Main thread (UI)
  * Dispatchers.IO	          -          Disk or network I/O
