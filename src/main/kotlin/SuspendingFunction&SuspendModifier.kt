@@ -1,3 +1,4 @@
+import kotlinx.coroutines.*
 
 /*
 A suspend function is a function that can be paused and resumed at a later time without blocking the main thread. It is marked using the suspend modifier.
@@ -23,8 +24,23 @@ Coroutine	               -                A lightweight thread for asynchronous 
 delay()                    -                A suspend function that simulates a delay without blocking the thread
 */
 
-fun main(){
+fun main() {
+    demoMain()
+}
 
+fun demoMain() = runBlocking {
+    launch {  ioOps() }
+    launch {  lessTime() }
+}
+
+suspend fun ioOps(){
+    delay(9000)
+    println("After Delay")
+}
+
+suspend fun lessTime(){
+    delay(3000)
+    println("Less delay")
 }
 
 

@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="Coroutines Basics">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/SuspendingFunction&amp;SuspendModifier.kt" afterDir="false" />
+    <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="suspending function and modifier">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Coroutines.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Coroutines.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/SuspendingFunction&amp;SuspendModifier.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/SuspendingFunction&amp;SuspendModifier.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +46,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotlin.SuspendingFunction_SuspendModifierKt">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="KotlinCoroutines.main" />
@@ -55,8 +54,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SuspendingFunction_SuspendModifierKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SuspendingFunction_SuspendModifierKt" />
+      <module name="KotlinCoroutines.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.SuspendingFunction_SuspendModifierKt" />
         <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
@@ -105,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1744900440798</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="suspending function and modifier">
+      <created>1744989247209</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1744989247209</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +137,7 @@
     <MESSAGE value="Setup" />
     <MESSAGE value="Basics" />
     <MESSAGE value="Coroutines Basics" />
-    <option name="LAST_COMMIT_MESSAGE" value="Coroutines Basics" />
+    <MESSAGE value="suspending function and modifier" />
+    <option name="LAST_COMMIT_MESSAGE" value="suspending function and modifier" />
   </component>
 </project>
