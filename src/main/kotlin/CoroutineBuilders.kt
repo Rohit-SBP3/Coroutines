@@ -61,11 +61,12 @@ fun main() = runBlocking {
     }
     println("You have ${inst.await()} followers on Instagram!")
 
-
-
 }
 
 private suspend fun getFBFollowers(): Int{
     delay(1000)
     return 568
 }
+
+// launch returns Job object.
+// async returns deferred ( Deferred<T> ) object.

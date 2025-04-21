@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="Coroutine Builders">
+    <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="Coroutine Builders launch, async and await">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/JobsAndCancellation.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/CoroutineBuilders.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/CoroutineBuilders.kt" afterDir="false" />
     </list>
@@ -21,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -45,9 +46,16 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Kotlin.CoroutineBuildersKt">
+  <component name="RunManager" selected="Kotlin.JobsAndCancellationKt">
     <configuration name="CoroutineBuildersKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CoroutineBuildersKt" />
+      <module name="KotlinCoroutines.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JobsAndCancellationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JobsAndCancellationKt" />
       <module name="KotlinCoroutines.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -69,6 +77,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.JobsAndCancellationKt" />
         <item itemvalue="Kotlin.CoroutineBuildersKt" />
         <item itemvalue="Kotlin.SuspendingFunction_SuspendModifierKt" />
         <item itemvalue="Kotlin.MainKt" />
@@ -140,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1745159673912</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Coroutine Builders launch, async and await">
+      <created>1745226945647</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1745226945647</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +176,7 @@
     <MESSAGE value="Coroutines Basics" />
     <MESSAGE value="suspending function and modifier" />
     <MESSAGE value="Coroutine Builders" />
-    <option name="LAST_COMMIT_MESSAGE" value="Coroutine Builders" />
+    <MESSAGE value="Coroutine Builders launch, async and await" />
+    <option name="LAST_COMMIT_MESSAGE" value="Coroutine Builders launch, async and await" />
   </component>
 </project>
