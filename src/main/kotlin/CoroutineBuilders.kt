@@ -8,7 +8,6 @@ import kotlinx.coroutines.*
        // launch
     }
 
-
     Builder	                             Description
     launch	                             Fire and forget. Starts a coroutine that doesn't return a result.
     async	                             Starts a coroutine that returns a Deferred (i.e., like Future) — use .await() to get the result.
@@ -39,8 +38,9 @@ fun main() = runBlocking {
     Check if it’s active, completed, or cancelled
     */
 
-    val job: Job = CoroutineScope(Dispatchers.IO).launch {
-        val f = getFBFollowers()
+    val job1: Job = CoroutineScope(Dispatchers.IO).launch {
+        var f = 0
+        f = getFBFollowers()
         println("You have $f followers on Facebook!")
     }
 
@@ -49,8 +49,19 @@ fun main() = runBlocking {
     join() is non-blocking for coroutines but suspends the current coroutine.
     So it's safe and useful when coordinating between multiple coroutines.
     */
-    //job.join()
-    job.cancel()
+    job1.join()
+
+    val job2: Unit = CoroutineScope(Dispatchers.IO).async {
+        val f = getFBFollowers()
+        println("You have $f followers on Youtube!")
+    }.await()
+
+    val inst = CoroutineScope(Dispatchers.IO).async {
+        getFBFollowers()
+    }
+    println("You have ${inst.await()} followers on Instagram!")
+
+
 
 }
 
