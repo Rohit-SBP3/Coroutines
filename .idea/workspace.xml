@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="Job and isActive use">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/WithContextAndRunBlocking.kt" afterDir="false" />
+    <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="withContext and runBlocking">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ViewmodelAndLifecycleScope.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -177,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1745315892745</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="withContext and runBlocking">
+      <created>1745319570695</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1745319570696</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,6 +207,7 @@
     <MESSAGE value="Coroutine Builders launch, async and await" />
     <MESSAGE value="Jobs" />
     <MESSAGE value="Job and isActive use" />
-    <option name="LAST_COMMIT_MESSAGE" value="Job and isActive use" />
+    <MESSAGE value="withContext and runBlocking" />
+    <option name="LAST_COMMIT_MESSAGE" value="withContext and runBlocking" />
   </component>
 </project>
