@@ -1,6 +1,6 @@
 
 
-// Deferred Inherits Job (def have return object)
+// Deferred (async) Inherits Job (launch) (def have return object)
 
 /*** Job Hierarchy:- Parent-Child Relationship
  * In Kotlin Coroutines, when you launch a coroutine inside another coroutine's scope,
@@ -11,9 +11,6 @@
  * The parent Job keeps track of all its child Jobs.
  * If a parent coroutine is cancelled, all child coroutines are cancelled automatically.
  * If a child fails (throws exception), by default the parent also gets cancelled (in launch).
- *
- *
- *
  */
 
 import kotlinx.coroutines.*
@@ -44,7 +41,29 @@ fun main() = runBlocking {
 
     delay(1500)
     println("Cancelling parent job...")
-    parentJob.cancelAndJoin()
-
+    parentJob.join()
+    // parentJob.cancelAndJoin()
     println("Main done")
+
+
+    execute()
+}
+
+suspend fun execute(){
+    val longJob = CoroutineScope(Dispatchers.IO).launch {
+        for(i in 1..1000){
+            if(isActive) {
+                longRunningTask()
+                println("Running ${i}th line")
+            }
+        }
+    }
+    delay(4000)
+    println("Cancelling the long job")
+    longJob.cancel()
+    longJob.join()
+}
+
+private fun longRunningTask(){
+    for(i in 1..10000000){}
 }
