@@ -1,4 +1,4 @@
-
+package coroutines
 /*** ----------------------------------------- Coroutines ----------------------------------------------
  * Coroutines are lightweight threads that allow you to write asynchronous code as if it were sequential,
  * making it easier to read and maintain.
@@ -21,9 +21,6 @@
 // Major difference between threads and coroutines as both creates a new thread and run the task on it
 // Coroutines helps to implement functionality that can be suspended & later resumed at specific
 // points without blocking the threads.
-
-import kotlinx.coroutines.*
-import kotlin.coroutines.CoroutineContext
 
 fun main() {
 

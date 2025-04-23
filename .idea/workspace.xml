@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="withContext and runBlocking">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ViewmodelAndLifecycleScope.kt" afterDir="false" />
+    <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="ViewModel Scope and Lifecycle Scope">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Flows/FlowsBasic.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/CoroutineBuilders.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Coroutines/CoroutineBuilders.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Coroutines.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Coroutines/Coroutines.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/JobsAndCancellation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Coroutines/JobsAndCancellation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Coroutines/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/SuspendingFunction&amp;SuspendModifier.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Coroutines/SuspendingFunction&amp;SuspendModifier.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ViewmodelAndLifecycleScope.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Coroutines/ViewmodelAndLifecycleScope.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/WithContextAndRunBlocking.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Coroutines/WithContextAndRunBlocking.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,14 +45,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/KotlinMin2Max/KotlinCoroutines/src/main/kotlin/Coroutines"
   }
-}</component>
-  <component name="RunManager" selected="Kotlin.WithContextAndRunBlockingKt">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\KotlinMin2Max\KotlinCoroutines\src\main\kotlin\Coroutines" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.FlowsBasicKt">
     <configuration name="CoroutineBuildersKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CoroutineBuildersKt" />
       <module name="KotlinCoroutines.main" />
@@ -53,15 +66,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JobsAndCancellationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JobsAndCancellationKt" />
+    <configuration name="FlowsBasicKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Flows.FlowsBasicKt" />
       <module name="KotlinCoroutines.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
+    <configuration name="JobsAndCancellationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JobsAndCancellationKt" />
       <module name="KotlinCoroutines.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -83,11 +96,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.FlowsBasicKt" />
         <item itemvalue="Kotlin.WithContextAndRunBlockingKt" />
         <item itemvalue="Kotlin.JobsAndCancellationKt" />
         <item itemvalue="Kotlin.CoroutineBuildersKt" />
         <item itemvalue="Kotlin.SuspendingFunction_SuspendModifierKt" />
-        <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1745319570696</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="ViewModel Scope and Lifecycle Scope">
+      <created>1745320853988</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1745320853988</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,6 +228,7 @@
     <MESSAGE value="Jobs" />
     <MESSAGE value="Job and isActive use" />
     <MESSAGE value="withContext and runBlocking" />
-    <option name="LAST_COMMIT_MESSAGE" value="withContext and runBlocking" />
+    <MESSAGE value="ViewModel Scope and Lifecycle Scope" />
+    <option name="LAST_COMMIT_MESSAGE" value="ViewModel Scope and Lifecycle Scope" />
   </component>
 </project>
