@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="ViewModel Scope and Lifecycle Scope">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Flows/FlowsBasic.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/CoroutineBuilders.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Coroutines/CoroutineBuilders.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Coroutines.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Coroutines/Coroutines.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/JobsAndCancellation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Coroutines/JobsAndCancellation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Coroutines/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/SuspendingFunction&amp;SuspendModifier.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Coroutines/SuspendingFunction&amp;SuspendModifier.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ViewmodelAndLifecycleScope.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Coroutines/ViewmodelAndLifecycleScope.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/WithContextAndRunBlocking.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Coroutines/WithContextAndRunBlocking.kt" afterDir="false" />
-    </list>
+    <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="Kotlin Flows" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +57,7 @@
       </method>
     </configuration>
     <configuration name="FlowsBasicKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Flows.FlowsBasicKt" />
+      <option name="MAIN_CLASS_NAME" value="flows.FlowsBasicKt" />
       <module name="KotlinCoroutines.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -204,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1745320853988</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Kotlin Flows">
+      <created>1745423307365</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1745423307365</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,6 +226,7 @@
     <MESSAGE value="Job and isActive use" />
     <MESSAGE value="withContext and runBlocking" />
     <MESSAGE value="ViewModel Scope and Lifecycle Scope" />
-    <option name="LAST_COMMIT_MESSAGE" value="ViewModel Scope and Lifecycle Scope" />
+    <MESSAGE value="Kotlin Flows" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kotlin Flows" />
   </component>
 </project>
