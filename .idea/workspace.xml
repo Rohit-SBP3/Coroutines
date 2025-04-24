@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="Kotlin Flows">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/flows/ChannelsExp.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/flows/FlowsBasic.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/flows/FlowsBasic.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -51,7 +51,14 @@
       <recent name="D:\KotlinMin2Max\KotlinCoroutines\src\main\kotlin\Coroutines" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.FlowsBasicKt">
+  <component name="RunManager" selected="Kotlin.ChannelsExpKt">
+    <configuration name="ChannelsExpKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="flows.ChannelsExpKt" />
+      <module name="KotlinCoroutines.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CoroutineBuildersKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CoroutineBuildersKt" />
       <module name="KotlinCoroutines.main" />
@@ -73,13 +80,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SuspendingFunction_SuspendModifierKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SuspendingFunction_SuspendModifierKt" />
-      <module name="KotlinCoroutines.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WithContextAndRunBlockingKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="WithContextAndRunBlockingKt" />
       <module name="KotlinCoroutines.main" />
@@ -89,11 +89,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.ChannelsExpKt" />
         <item itemvalue="Kotlin.FlowsBasicKt" />
         <item itemvalue="Kotlin.WithContextAndRunBlockingKt" />
         <item itemvalue="Kotlin.JobsAndCancellationKt" />
         <item itemvalue="Kotlin.CoroutineBuildersKt" />
-        <item itemvalue="Kotlin.SuspendingFunction_SuspendModifierKt" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1745423420194</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Kotlin Flows">
+      <created>1745508902908</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1745508902908</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
