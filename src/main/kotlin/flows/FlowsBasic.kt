@@ -1,11 +1,8 @@
 package flows
 
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.delay
+import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
 
 /***
  * Kotlin Flows are part of Kotlin Coroutines, designed to handle asynchronous streams of data.
@@ -40,17 +37,47 @@ import kotlinx.coroutines.runBlocking
  *
  * */
 
+/***
+Kotlin has asynchronous stream support using channels and flows.
+Channels(Send & Receive), Channels are hot(means constantly produce whether consumer is consuming or not),
+in hot you will not able to get the data you lost.
+Flows(Emit & Collect), Flows are mostly cold(produces only if there is a consumer to consume),
+in cold you will get the data from the start.
+*/
+
 fun main(): Unit = runBlocking{
 
-    GlobalScope.launch {
+    val job1 = launch {
         numbersFlow().collect { value ->
             println("Received $value")
         }
-    }.join()
+    }
+
+    val job2 = launch {
+        getAllUsersList().forEach {
+            println("Username is $it")
+        }
+    }
+}
+
+// Typical Approach( It will wait for whole list to complete)
+suspend fun getAllUsersList(): List<String>{
+    val userList = mutableListOf<String>()
+    userList.add(getUser(1))
+    userList.add(getUser(2))
+    userList.add(getUser(3))
+    userList.add(getUser(4))
+    userList.add(getUser(5))
+    return userList
+}
+
+suspend fun getUser(userId: Int): String{
+    delay(1000)
+    return "$userId"
 }
 
 fun numbersFlow(): Flow<Int> = flow {
-    for (i in 1..5) {
+    for (i in 1..8) {
         delay(1000)
         emit(i)
     }
