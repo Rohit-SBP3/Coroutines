@@ -7,6 +7,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
 fun main() = runBlocking{
+
     val channel = Channel<Int>()
     producer(channel)
     consumer(channel)

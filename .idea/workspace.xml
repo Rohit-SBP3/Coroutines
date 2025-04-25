@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="Kotlin Flows">
+    <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="Kotlin Channels Example code">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/flows/FlowsExp.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/flows/ChannelsExp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/flows/ChannelsExp.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/flows/FlowsBasic.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/flows/FlowsBasic.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +53,7 @@
       <recent name="D:\KotlinMin2Max\KotlinCoroutines\src\main\kotlin\Coroutines" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.FlowsBasicKt">
+  <component name="RunManager" selected="Kotlin.FlowsExpKt">
     <configuration name="CoroutineBuildersKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CoroutineBuildersKt" />
       <module name="KotlinCoroutines.main" />
@@ -66,15 +68,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JobsAndCancellationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JobsAndCancellationKt" />
+    <configuration name="FlowsExpKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="flows.FlowsExpKt" />
       <module name="KotlinCoroutines.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SuspendingFunction_SuspendModifierKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SuspendingFunction_SuspendModifierKt" />
+    <configuration name="JobsAndCancellationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JobsAndCancellationKt" />
       <module name="KotlinCoroutines.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -89,11 +91,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.FlowsExpKt" />
         <item itemvalue="Kotlin.FlowsBasicKt" />
         <item itemvalue="Kotlin.WithContextAndRunBlockingKt" />
         <item itemvalue="Kotlin.JobsAndCancellationKt" />
         <item itemvalue="Kotlin.CoroutineBuildersKt" />
-        <item itemvalue="Kotlin.SuspendingFunction_SuspendModifierKt" />
       </list>
     </recent_temporary>
   </component>
@@ -237,6 +239,7 @@
     <MESSAGE value="withContext and runBlocking" />
     <MESSAGE value="ViewModel Scope and Lifecycle Scope" />
     <MESSAGE value="Kotlin Flows" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kotlin Flows" />
+    <MESSAGE value="Kotlin Channels Example code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kotlin Channels Example code" />
   </component>
 </project>

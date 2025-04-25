@@ -43,6 +43,8 @@ Channels(Send & Receive), Channels are hot(means constantly produce whether cons
 in hot you will not able to get the data you lost.
 Flows(Emit & Collect), Flows are mostly cold(produces only if there is a consumer to consume),
 in cold you will get the data from the start.
+
+Cold streams are more preferred over hot streams.
 */
 
 fun main(): Unit = runBlocking{
