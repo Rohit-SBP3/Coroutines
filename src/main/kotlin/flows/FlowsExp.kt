@@ -1,18 +1,34 @@
 package flows
 
-import kotlinx.coroutines.delay
+import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
 
 fun main() = runBlocking{
 
-    launch {
+    val job1 = launch {
         producer().collect {
-            println(it.toString())
+            println("Consumer 1 gets ${it.toString()}")
         }
+    }
+
+    // Even the producer has start producing every consumer will get it from the start...
+    // In terms of cold streams each of the consumer is independent and gets data from the starting of the production...
+    // For ex:- our job2 started after 2500ms but get the data from 1.
+    // In hot the previous produced data is not available to the consumer...
+    val job2 = launch {
+        producer().collect {
+            delay(2500)
+            println("Consumer 2 gets ${it.toString()}")
+        }
+    }
+
+    // for cancelling the flow
+    CoroutineScope(Dispatchers.IO).launch {
+        delay(5500)
+        job1.cancel()
     }
 
     val ul: List<User> = listOf(
@@ -26,6 +42,7 @@ fun main() = runBlocking{
             println("Shipping Charge is $it")
         }
     }
+
 
     println("Main")
 
@@ -44,8 +61,9 @@ fun getShippingPrice(userList: List<User>): Flow<Int> = flow{
     }
 }
 
+// You can have multiple consumer for the same producer.............
 fun producer(): Flow<Int> = flow{
-    val l = listOf<Int>(1,2,3,4,5,6,7,8,9)
+    val l = listOf(1,2,3,4,5,6,7,8,9)
     l.forEach {
         delay(1000)
         emit(it)
