@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="Flows Operators">
+    <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="Flows Buffer exp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/flows/FlowOperators.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/flows/FlowOperators.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/flows/ContextPreservation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/flows/ContextPreservation.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +51,14 @@
       <recent name="D:\KotlinMin2Max\KotlinCoroutines\src\main\kotlin\Coroutines" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.FlowOperatorsKt">
+  <component name="RunManager" selected="Kotlin.ContextPreservationKt">
+    <configuration name="ContextPreservationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="flows.ContextPreservationKt" />
+      <module name="KotlinCoroutines.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FlowOperatorsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="flows.FlowOperatorsKt" />
       <module name="KotlinCoroutines.main" />
@@ -73,13 +80,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JobsAndCancellationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JobsAndCancellationKt" />
-      <module name="KotlinCoroutines.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WithContextAndRunBlockingKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="WithContextAndRunBlockingKt" />
       <module name="KotlinCoroutines.main" />
@@ -89,11 +89,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.ContextPreservationKt" />
         <item itemvalue="Kotlin.FlowOperatorsKt" />
         <item itemvalue="Kotlin.FlowsExpKt" />
         <item itemvalue="Kotlin.FlowsBasicKt" />
         <item itemvalue="Kotlin.WithContextAndRunBlockingKt" />
-        <item itemvalue="Kotlin.JobsAndCancellationKt" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1745663784339</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Flows Buffer exp">
+      <created>1745735086370</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1745735086370</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,6 +269,7 @@
     <MESSAGE value="Flows Exp of emit collect" />
     <MESSAGE value="Flows(cancellation and multiple consumers)" />
     <MESSAGE value="Flows Operators" />
-    <option name="LAST_COMMIT_MESSAGE" value="Flows Operators" />
+    <MESSAGE value="Flows Buffer exp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Flows Buffer exp" />
   </component>
 </project>
