@@ -3,6 +3,7 @@ package flows
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
 import kotlin.math.sqrt
+import kotlin.system.measureTimeMillis
 
 /*** Terminal Operators:
  * A Terminal Operator is an operation that starts the flow and collects the emitted data.
@@ -55,31 +56,64 @@ import kotlin.math.sqrt
 fun main() = runBlocking{
 
     launch {
-        producePrimes(50)
-            .onCompletion { println("Range reached") }
-            .onStart {
-                emit("0")
-                println("Producing prime numbers takes some time")
-            }
-            .onEach { println("Thanks") }
-            .collect{ println(it) }
+        val time = measureTimeMillis {
+            producePrimes(50)
+                .onCompletion { println("Range reached") }
+                .onStart {
+                    //emit(-1)
+                    println("Producing prime numbers takes some time")
+                }
+                .buffer(3)
+                .onEach { print("This is your prime number: ") }
+                .collect {
+                    // consumer is slow so we buffer
+                    delay(1500)
+                    println(it)
+                }
+        }
+        println(time)
     }
 
-    launch {
+    /*launch {
         val two = producePrimes(5).first()
-        val nPList = producePrimes(10).map { it+1 }.toList()
+        val nPList = producePrimes(10).map {it+1}.filter { it % 2 == 0 }.toList()
         println(two)
         println(nPList)
-    }
+    }*/
+
+    /*launch {
+             getNotes()
+            .map{ FormattedNotes(it.isActive, it.title.uppercase(), it.description ) }
+            .filter { it.isActive }
+            .collect{
+                println(it.toString())
+            }
+    }*/
 
     println("Hello I am under the water!")
 }
 
-fun producePrimes(range: Int) = flow<String>{
+private fun getNotes(): Flow<Notes>{
+
+    val notesList = listOf<Notes>(
+        Notes(1,true,"Apple","apple"),
+        Notes(2,false,"Banana","banana"),
+        Notes(3,true,"Cat","cat"),
+        Notes(4,true,"Dog","dog"),
+        Notes(5,false,"Elephant","elephant")
+    )
+
+    return notesList.asFlow()
+}
+
+data class Notes(val id: Int, val isActive: Boolean, val title: String, val description: String)
+data class FormattedNotes(val isActive: Boolean, val title: String, val description: String)
+
+fun producePrimes(range: Int) = flow<Int>{
     val list = sieveOfEratosthenes(range)
     list.forEach {
         delay(1000)
-        if(it != -1) emit("$it is a Prime Number")
+        if(it != -1) emit(it)
     }
 }
 
