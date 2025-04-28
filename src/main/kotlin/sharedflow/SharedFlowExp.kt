@@ -19,14 +19,14 @@ Replay old values?            | No                                              
 fun main() = runBlocking{
 
 
-    launch {
+    val j1 = launch {
         val m = manu()
         m.collect {
             println("This is $it")
         }
     }
 
-    launch {
+    val j2 = launch {
         val mc = manu()
         delay(2500)
         mc.collect {
@@ -34,6 +34,7 @@ fun main() = runBlocking{
         }
     }
 
+    joinAll(j1,j2)
     println("Groot!")
 }
 

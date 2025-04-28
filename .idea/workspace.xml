@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="Exception Handling in flows (Flow.catch)">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sharedflow/SharedFlowExp.kt" afterDir="false" />
+    <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="Shared Flow Examples">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sharedflow/StateFlowAndLiveData.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/sharedflow/SharedFlowExp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/sharedflow/SharedFlowExp.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
       <recent name="D:\KotlinMin2Max\KotlinCoroutines\src\main\kotlin\Coroutines" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.SharedFlowExpKt">
+  <component name="RunManager" selected="Kotlin.StateFlowAndLiveDataKt">
     <configuration name="ContextPreservationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="flows.ContextPreservationKt" />
       <module name="KotlinCoroutines.main" />
@@ -73,13 +74,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlowsExpKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="flows.FlowsExpKt" />
-      <module name="KotlinCoroutines.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SharedFlowExpKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sharedflow.SharedFlowExpKt" />
       <module name="KotlinCoroutines.main" />
@@ -87,13 +81,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StateFlowAndLiveDataKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sharedflow.StateFlowAndLiveDataKt" />
+      <module name="KotlinCoroutines.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.StateFlowAndLiveDataKt" />
         <item itemvalue="Kotlin.SharedFlowExpKt" />
         <item itemvalue="Kotlin.ExceptionInFlowsKt" />
         <item itemvalue="Kotlin.ContextPreservationKt" />
         <item itemvalue="Kotlin.FlowOperatorsKt" />
-        <item itemvalue="Kotlin.FlowsExpKt" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1745826973874</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Shared Flow Examples">
+      <created>1745829991098</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1745829991098</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,6 +294,7 @@
     <MESSAGE value="Flows Buffer exp" />
     <MESSAGE value="Context Preservation (flowon)" />
     <MESSAGE value="Exception Handling in flows (Flow.catch)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exception Handling in flows (Flow.catch)" />
+    <MESSAGE value="Shared Flow Examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="Shared Flow Examples" />
   </component>
 </project>
