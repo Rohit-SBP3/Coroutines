@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="Flows Buffer exp">
+    <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="Context Preservation (flowon)">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/flows/ExceptionInFlows.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/flows/ContextPreservation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/flows/ContextPreservation.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +51,16 @@
       <recent name="D:\KotlinMin2Max\KotlinCoroutines\src\main\kotlin\Coroutines" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.ContextPreservationKt">
+  <component name="RunManager" selected="Kotlin.ExceptionInFlowsKt">
     <configuration name="ContextPreservationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="flows.ContextPreservationKt" />
+      <module name="KotlinCoroutines.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExceptionInFlowsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="flows.ExceptionInFlowsKt" />
       <module name="KotlinCoroutines.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,20 +87,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WithContextAndRunBlockingKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WithContextAndRunBlockingKt" />
-      <module name="KotlinCoroutines.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.ExceptionInFlowsKt" />
         <item itemvalue="Kotlin.ContextPreservationKt" />
         <item itemvalue="Kotlin.FlowOperatorsKt" />
         <item itemvalue="Kotlin.FlowsExpKt" />
         <item itemvalue="Kotlin.FlowsBasicKt" />
-        <item itemvalue="Kotlin.WithContextAndRunBlockingKt" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1745735086370</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Context Preservation (flowon)">
+      <created>1745737343478</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1745737343478</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,6 +277,7 @@
     <MESSAGE value="Flows(cancellation and multiple consumers)" />
     <MESSAGE value="Flows Operators" />
     <MESSAGE value="Flows Buffer exp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Flows Buffer exp" />
+    <MESSAGE value="Context Preservation (flowon)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Context Preservation (flowon)" />
   </component>
 </project>
