@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="Shared Flow Examples">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sharedflow/StateFlowAndLiveData.kt" afterDir="false" />
+    <list default="true" id="be19ccc3-815a-4237-a230-6d0869f6d222" name="Changes" comment="StateFlow and LiveData">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/sharedflow/SharedFlowExp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/sharedflow/SharedFlowExp.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1745829991098</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="StateFlow and LiveData">
+      <created>1745832643607</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1745832643607</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -295,6 +300,7 @@
     <MESSAGE value="Context Preservation (flowon)" />
     <MESSAGE value="Exception Handling in flows (Flow.catch)" />
     <MESSAGE value="Shared Flow Examples" />
-    <option name="LAST_COMMIT_MESSAGE" value="Shared Flow Examples" />
+    <MESSAGE value="StateFlow and LiveData" />
+    <option name="LAST_COMMIT_MESSAGE" value="StateFlow and LiveData" />
   </component>
 </project>
